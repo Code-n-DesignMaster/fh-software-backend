@@ -1,0 +1,17 @@
+<p>Hi {{user.name}}, </p>
+<p>Your payment has been successfully.</p>
+<p>Transaction ID: {{transactionId}}</p>
+<table>
+  <tr>
+    <th>Product</th>
+    <th>Description</th>
+    <th>Price</th>
+  </tr>
+  {{#products}}
+    <tr>
+      <td>{{name}}</td>
+      <td>{{description}}</td>
+      <td>${{price}}</td>
+    </tr>
+    {{/products}}
+</table>

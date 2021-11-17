@@ -1,0 +1,19 @@
+<p>Hi there,</p>
+<p>A new payment successful on your site.</p>
+<p>User: {{user.name}} - @{{user.username}} -{{user.email}}</p>
+<p>Model: {{performer.name}} - @{{performer.username}} - {{performer.email}}</p>
+<p>Transaction ID: <b>{{transactionId}}</b></p>
+<table>
+  <tr>
+    <th>Product</th>
+    <th>Description</th>
+    <th>Price</th>
+  </tr>
+  {{#products}}
+  <tr>
+    <td>{{name}}</td>
+    <td>{{description}}</td>
+    <td>${{price}}</td>
+  </tr>
+  {{/products}}
+</table>
